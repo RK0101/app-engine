@@ -1,0 +1,5 @@
+steps:
+
+# deploy the app on App Engine
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['app','deploy']
