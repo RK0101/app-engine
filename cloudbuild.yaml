@@ -3,3 +3,10 @@ steps:
 # deploy the app on App Engine
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['app','deploy']
+  
+  steps:
+- name: gcr.io/cloud-builders/git
+  args: ['clone', 'https://github.com/RK0101/app-engine']
+  - name: gcr.io/cloud-builders/gcloud
+  args: ["builds", "submit"]
+#  dir: "testing"   # I assume that the git clone has created the testing directory
