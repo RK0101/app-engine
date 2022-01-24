@@ -1,8 +1,8 @@
-steps:
+#steps:
 
 # deploy the app on App Engine
-- name: 'gcr.io/cloud-builders/gcloud'
-  args: ['app','deploy']
+#- name: 'gcr.io/cloud-builders/gcloud'
+#  args: ['app','deploy']
   
   steps:
 - name: gcr.io/cloud-builders/git
